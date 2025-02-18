@@ -1,5 +1,9 @@
 body
 {
-
 }
-
+footer 
+{
+	font-weight: bold;
+	background-color: gold;
+	color: purple;
+}
