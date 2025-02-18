@@ -1,14 +1,52 @@
 <!DOCTYPE HTML>
 <html>
-	<head>
-		<meta charset="UTF-8">
-		<title>Four Sorting Algorithms</title>
-		<link rel="stylesheet" href="algosite.css">
-		<!--<style></style>-->
-	</head>
-	<body>
-		<div class="algorithm">
-			<h1>Insertion Sort</h1>
-		</div>
+<head>
+	<meta charset="UTF-8">
+	<title>Four Sorting Algorithms</title>
+	<link rel="stylesheet" href="algosite.css">
+	<!--<style></style>-->
+</head>
+<body>
+	<header>
+		<h1>Four Sorting Algorithms</h1>
+	</header>
+	<!-- Insertion Sort Section -->
+	<div id="insertion-sort" class="algorithm">
+		<h2>Insertion Sort</h2>
+		<p>
+		Insertion sort is a simple sorting algorithm that builds the sorted
+		array one item at a time. It is much like sorting playing cards in
+		your hands.
+		</p>
+		<pre><code class="language-javascript">
+		// Insertion Sort Implementation
+  		function insertionSort(arr) 
+  		{
+			   for (let i = 1; i < arr.length; i++) 
+			   {
+			   	let key = arr[i];
+			   	let j = i - 1;
+			   	while (j >= 0 && arr[j] > key) 
+				{
+			   		arr[j + 1] = arr[j];
+			   		j--;
+			   	}
+			   		arr[j + 1] = key;
+			   }
+			   return arr;
+		}
+		</code></pre>
+	</div>
+	<hr>
+	<div id="selection-sort" class="algorithm">
+		<h2>Selection Sort</h2>
+		<p>
+		Selection sort is a simple algorithm that repeatedly selects the smallest
+		element from the unsorted portion and places it in the sorted position.
+		</p>
+		<pre><code class="language-javascript">
+		// Selection Sort Implementation
+		</code></pre>
+	<footer>Thank you</footer>
 	</body>
 </html>
